@@ -1,0 +1,86 @@
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-image: cover;
+
+    @media (max-width: 375px) {
+        background-image: url("https://github.com/FrankZiWANG-dev/frontend-mentor-1/blob/main/Exercise%20instructions/order-summary-component-main/images/pattern-background-mobile.svg?raw=true");
+    }
+    @media (min-width: 376px) {
+        background-image: url("https://raw.githubusercontent.com/FrankZiWANG-dev/frontend-mentor-1/17cbb33138ff70803305410f5103b532b4a68acf/Exercise%20instructions/order-summary-component-main/images/pattern-background-desktop.svg?raw=true");
+    }
+    margin: 0;
+    height: screen;
+    display:flex;
+    justify-content: center;
+}
+h1{
+    color: hsl(223, 47%, 23%);
+    font-size: 22px;
+    font-weight: bolder;
+}
+p{
+    color:   hsl(224, 23%, 55%);
+}
+#container{
+    background-color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    text-align: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    gap: 20px;
+
+    border-radius: 30px;
+    font-size: 16px;
+}
+#hero{
+    height: 150px;
+    width: 100%;
+    background-image: url("https://raw.githubusercontent.com/FrankZiWANG-dev/frontend-mentor-1/17cbb33138ff70803305410f5103b532b4a68acf/Exercise%20instructions/order-summary-component-main/images/illustration-hero.svg?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container-text{
+    width: 80%;
+}
+#plan{
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    a{
+        color: hsl(245, 75%, 52%);
+        font-weight: bold;
+    }
+}
+#music-icon{
+    width:30px;
+    height:30px;
+}
+
+#payment{
+    background-color:  hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-weight:bold;
+
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0px 10px 8px hsl(225, 100%, 94%);
+    padding: 10px;
+}
+
+#cancel{
+    font-weight: bold;
+    color: hsl(224, 23%, 55%);
+    padding-bottom: 20px;
+}
