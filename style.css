@@ -50,12 +50,23 @@ p {
       -ms-flex-align: center;
           align-items: center;
   height: 80%;
-  width: 80%;
   margin-top: 10%;
   margin-bottom: 10%;
   gap: 20px;
   border-radius: 30px;
   font-size: 16px;
+}
+
+@media (max-width: 375px) {
+  #container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 376px) {
+  #container {
+    width: 400px;
+  }
 }
 
 #hero {
@@ -88,6 +99,10 @@ p {
   font-weight: bold;
 }
 
+#plan a:hover {
+  color: #7280a7;
+}
+
 #music-icon {
   width: 30px;
   height: 30px;
@@ -95,8 +110,6 @@ p {
 
 #payment {
   background-color: #3829e0;
-  color: #f5f7ff;
-  font-weight: bold;
   border-radius: 10px;
   width: 70%;
   -webkit-box-shadow: 0px 10px 8px #e0e8ff;
@@ -104,9 +117,26 @@ p {
   padding: 10px;
 }
 
+#payment:hover {
+  background-color: #7280a7;
+}
+
+#payment a {
+  text-decoration: none;
+  color: #f5f7ff;
+}
+
 #cancel {
   font-weight: bold;
-  color: #7280a7;
   padding-bottom: 20px;
+}
+
+#cancel a {
+  text-decoration: none;
+  color: #7280a7;
+}
+
+#cancel a:hover {
+  color: #1f2f56;
 }
 /*# sourceMappingURL=style.css.map */
